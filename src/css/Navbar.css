@@ -1,0 +1,21 @@
+.NavFooter{
+    background: pink;
+    height: 70px;
+}
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+.links{
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 210px) {
+    .name{
+        font-size: 25px;
+    }
+}
