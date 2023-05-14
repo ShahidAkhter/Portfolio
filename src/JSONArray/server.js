@@ -8,7 +8,7 @@ app.get('/api/myProjects', async (req, res) => {
     const googleAppsScriptURL = 'GoogleDriveLink';
     const response = await axios.get(googleAppsScriptURL);
     res.json(response.data);
-    console.log(rdesponse.data)
+    console.log(response.data)
   } catch (error) {
     res.status(500).json({ error: 'Internal Server Error' });
   }
