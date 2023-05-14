@@ -11,7 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+*{
+  outline: none;
+}
 /* .links{
   user-select: none !important;
 } */
@@ -214,7 +216,9 @@ code {
 .w-7{
   width: 100%;
 }
-
+.w-93-per{
+  width: 93%;
+}
 .h-1 {
   height: 280px !important;
 }
