@@ -8,6 +8,9 @@ import ScrollToTop from './components/ScrollToTop';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Projects from './components/Projects';
 import { projectsArray } from './JSONArray/projectsArr'
+import About from './components/About';
+import Contact from './components/Contact';
+import logo from './logo.jpg';
 
 function App() {
   // eslint-disable-next-line
@@ -28,11 +31,22 @@ function App() {
         <Routes>
           <Route path='/' element={<Home updateView={updateView} />} />
           {projectsArray && projectsArray.map((e, i) => {
-            let projectURL = replaceInStr(e.title, /\s+/g, "_");
-            return <Route path={`/Projects/${projectURL}_${i+1}`} element={<View index={i}/>}  key={i}/>
+            return <Route path={`/Projects/${replaceInStr(e.title, /\s+/g, "_")}_${i + 1}`} element={<View index={i} />} key={i} />
           })}
           <Route path='/Projects' element={<Projects updateView={updateView} />} />
-          <Route path='/view' element={<Projects updateView={updateView} />} />
+          <Route path='/View' element={<Projects updateView={updateView} />} />
+          <Route path='/About' element={<About
+            img={logo}
+            name="Shahid Akhter"
+            skillName="Frontend Web Developer"
+            description="I'm a frontend web developer can build websites with HTML, CSS & JS and most popular library of JavaScript called ReactJS and working on BootrapCSS and TailwindCSS."
+          />} />
+          <Route path='/Contact' element={<Contact
+            img={logo}
+            name="Shahid Akhter"
+            skillName="Frontend Web Developer"
+            description="I'm a frontend web developer can build websites with HTML, CSS & JS and most popular library of JavaScript called ReactJS and working on BootrapCSS and TailwindCSS."
+          />} />
         </Routes>
         <Footer name="ShahidAkhter" />
       </BrowserRouter>

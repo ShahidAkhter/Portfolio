@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import logo from '../logo.jpg'
+import githubLogo from '../assets/imgs/github.svg'
 
 const Footer = (props) => {
     return (
@@ -10,7 +11,7 @@ const Footer = (props) => {
             <div className="name text-size-1 text-pink">{props.name}</div>
             </div>
             <div className="text-pink">
-                <Link className="links text-pink" to="https://github.com/ShahidAkhter" target='_blank'>Github</Link>
+                <Link className="links text-pink" to="https://github.com/ShahidAkhter" target='_blank'><img src={githubLogo} className='h-5' alt="logo" /></Link>
             </div>
         </footer>
     )

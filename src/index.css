@@ -126,6 +126,10 @@ code {
   justify-content: space-around;
 }
 
+.f-top{
+  align-items: flex-start;
+}
+
 .f-wrap {
   flex-wrap: wrap;
 }
@@ -183,6 +187,9 @@ code {
 .px-0 {
   padding-left: 1vw;
   padding-right: 1vw;
+}
+.pt-8 {
+  padding-left: 10px;
 }
 
 .w-auto {
@@ -316,6 +323,9 @@ code {
 
 .bg-3 {
   background: rgb(255, 222, 228);
+}
+.bg-white {
+  background: rgb(255, 255, 255);
 }
 
 .z-index-max {

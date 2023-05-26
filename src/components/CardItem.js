@@ -17,7 +17,7 @@ const CardItem = (props) => {
         <div className="title font-bold text-pink">{props.title}</div>
         <div className="category font-bold text-color-2">{props.category}</div>
         <div className="description h-7">
-          {props.description.length > maxLength ? <div>{props.description.slice(0, maxLength)}...<Link className="links ml-0" to="/view"><span className='font-bold ml-0 links text-pink cursor-pointer' onClick={()=>{props.updateView(props.index)}}>Read More</span></Link></div> : props.description}
+          {props.metaDescription.length > maxLength ? <div>{props.metaDescription.slice(0, maxLength)}...<Link className="links ml-0" to="/view"><span className='font-bold ml-0 links text-pink cursor-pointer' onClick={()=>{props.updateView(props.index)}}>Read More</span></Link></div> : props.metaDescription}
         </div>
         <div className="btns btns-1">
           {/* <Link className="links ml-0" to="/Readmore"><button className='bg text-white linkBtns linkBtn1 ml-0'>Read More</button></Link> */}

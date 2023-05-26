@@ -5,28 +5,32 @@ export const projectsArray=[
         image:logo,
         title:"Typing Test",
         category:"Web App",
-        description:"Typing Test by Shahid Akhter",
+        metaDescription:"Typing Test by Shahid Akhter",
+        detailedDescription:"This is an detailedDescription",
         visitURL:"https://typingtest.shahidakhter.repl.co/"
     },
     {
         image:logo,
         title:"Bingo",
         category:"Web App",
-        description:"Game normally played on books/copies",
+        metaDescription:"Game normally played on books/copies",
+        detailedDescription:"This is an detailedDescription",
         visitURL:"https://bingo.shahidakhter.repl.co/"
     },
     {
         image:logo,
         title:"Tic Tac Toe",
         category:"Web App",
-        description:"Game Tic Tac Toe",
+        metaDescription:"Game Tic Tac Toe",
+        detailedDescription:"This is an detailedDescription",
         visitURL:"https://google.com/"
     },
     {
         image:"https://mypodcasts.shahidakhter.repl.co/assets/favicon.ico",
         title:"MyPodcasts",
         category:"Web App",
-        description:"Your favourite Podcasts is Here",
+        metaDescription:"Your favourite Podcasts is Here",
+        detailedDescription:"This is an detailedDescription",
         visitURL:"https://mypodcasts.shahidakhter.repl.co/"
     },
 ];

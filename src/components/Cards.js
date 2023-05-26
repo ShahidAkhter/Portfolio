@@ -13,7 +13,7 @@ const Cards = (props) => {
       <div className='flex f-center f-wrap'>
         {projectsArray && projectsArray.map((element, i) => {
           // props.updateProgress(0+(projectsArray.length*100))
-          return i<3 && <CardItem img={element.image} title={element.title} category={element.category} description={element.description} index={i} key={i} updateView={props.updateView}/>
+          return i<3 && <CardItem img={element.image} title={element.title} category={element.category} metaDescription={element.metaDescription} index={i} key={i} updateView={props.updateView}/>
         })}
 
       </div>
