@@ -11,6 +11,7 @@ import { projectsArray } from './JSONArray/projectsArr'
 import About from './components/About';
 import Contact from './components/Contact';
 import logo from './logo.jpg';
+import Page404 from './components/Page404';
 
 function App() {
   // eslint-disable-next-line
@@ -46,6 +47,7 @@ function App() {
             skillName="Frontend Web Developer"
             description="I'm a frontend web developer can build websites with HTML, CSS & JS and most popular library of JavaScript called ReactJS and working on BootrapCSS and TailwindCSS."
           />} />
+          <Route path="*" element={<Page404/>} />
         </Routes>
         <Footer name="ShahidAkhter" />
       </BrowserRouter>

@@ -225,6 +225,9 @@ code {
 .w-93-per{
   width: 93%;
 }
+.h-0 {
+  height: 50px !important;
+}
 .h-1 {
   height: 280px !important;
 }
