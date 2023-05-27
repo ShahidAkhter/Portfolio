@@ -18,7 +18,9 @@ const View = (props) => {
     // eslint-disable-next-line
     const [visit, setVisit] = useState(projectsArray[key].visitURL)
 
-
+    const createMarkup = () => {
+        return { __html: DetailedDescription };
+    }
 
     return (
         <div className='view min-h-2'>
@@ -35,14 +37,14 @@ const View = (props) => {
                     </div>
                 </div>
                 <div className="Viewinfo px-0 text-left w-4  margin-x margin-y">
-                    <div className="description text-justify margin-x">
+                    <div className="description text-justify text-size-4 margin-x">
                         {metaDescription}
                     </div>
                 </div>
                 <div className='text-center'><img src={image} className="border-1 border-radius w-4 h-4" alt='ViewImg' /></div>
                 <div className="Viewinfo px-0 text-left w-4  margin-x margin-y">
-                    <div className="description text-justify margin-x">
-                        {DetailedDescription}
+                    <div className="description text-justify text-size-4 margin-x margin-y">
+                        <div dangerouslySetInnerHTML={createMarkup()} />
                     </div>
                 </div>
             </div>

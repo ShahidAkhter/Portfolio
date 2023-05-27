@@ -39,7 +39,6 @@ function App() {
             img={logo}
             name="Shahid Akhter"
             skillName="Frontend Web Developer"
-            description="I'm a frontend web developer can build websites with HTML, CSS & JS and most popular library of JavaScript called ReactJS and working on BootrapCSS and TailwindCSS."
           />} />
           <Route path='/Contact' element={<Contact
             img={logo}

@@ -5,12 +5,12 @@ import { projectsArray } from '../JSONArray/projectsArr'
 const Projects = (props) => {
     return (
         <div className='w-auto'>
-            <div className='text-right w-93-per'>
+            {/* <div className='text-right w-93-per'>
                 <select className="categoryType border-1 border-radius text-size-4 bg-white">
                     <option value="Web App">All</option>
                     <option value="Web App">Web App</option>
                 </select>
-            </div>
+            </div> */}
             <div className="min-h-2">
                 <div className='flex f-center f-wrap margin-t'>
                     {projectsArray && projectsArray.map((element, i) => {
