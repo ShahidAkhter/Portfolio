@@ -16,7 +16,7 @@ const Contact = (props) => {
                         <div className="skillName text-color-2 font-bold">{props.skillName}</div>
                         <div className="name text-pink ml-0">{props.name}</div>
                         <div className="nameByFatherName font-bold text-pink ml-0 text-color-2 text-size-4">{props.nameByFatherName}</div>
-                        <div className="desc text-size-1 text-center">{props.description}</div>
+                        <div className="desc text-size-1 text-center margin-t">{props.description}</div>
                     </div>
                     <div className="info flex f-left f-col">
                         <div className="email text-size-4 font-bold">Email Address</div>
