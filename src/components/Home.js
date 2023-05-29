@@ -6,7 +6,8 @@ const Home = (props) => {
   return (
     <div className='min-h-2'>
       <Header 
-      name="Shahid Akhter" 
+      name="Shahid Akhter"
+      nameByFatherName="Dilwar II"
       skillName="Frontend Web Developer" 
       description="I'm a frontend web developer can build websites with HTML, CSS & JS and most popular library of JavaScript called ReactJS and working on BootrapCSS and TailwindCSS." 
       />

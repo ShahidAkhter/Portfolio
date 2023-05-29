@@ -7,6 +7,9 @@
     width: 200px;
     border-radius: 50%;
 }
+.nameByFatherName{
+    font-size: 22px;
+}
 .skillName{
     font-size: 20px;
 }

@@ -13,6 +13,8 @@ const About = (props) => {
                     <div className="info flex f-center f-col">
                         <div className="skillName text-color-2 font-bold">{props.skillName}</div>
                         <div className="name text-pink ml-0">{props.name}</div>
+                        <div className="nameByFatherName font-bold text-pink ml-0 text-color-2 text-size-4">{props.nameByFatherName}</div>
+
                         {/* <div className="desc text-size-1 text-center">{props.description}</div> */}
                     </div>
                 </div>
@@ -29,7 +31,7 @@ const About = (props) => {
                     <p>For more about this project visit <Link className="text-pink font-bold" to="/Projects/Typing_Test_1">here</Link></p>
 
                     <p className='font-bold text-color-2'>Bingo:</p>
-                    <p>Bingo is a game mostly played on your traditional books/copies mainly played by two players. In this game, there is a grid mostly 5x5, in it player should have to put random numbers from 1 to the no. of grid of your choice to where should put that no. in a particular cell which can be seen in below image.</p> 
+                    <p>Bingo is a game mostly played on your traditional books/copies mainly played by two players. In this game, there is a grid mostly 5x5, in it player should have to put random numbers from 1 to the no. of grid of your choice to where should put that no. in a particular cell which can be seen in below image.</p>
                     <p>For more about this project visit <Link className="text-pink font-bold" to="/Projects/Bingo_2">here</Link></p>
                     <p>For more awesome projects visit <Link className="text-pink font-bold" to="/Projects">here</Link></p>
 

@@ -39,11 +39,13 @@ function App() {
           <Route path='/About' element={<About
             img={logo}
             name="Shahid Akhter"
+            nameByFatherName="Dilwar II"
             skillName="Frontend Web Developer"
           />} />
           <Route path='/Contact' element={<Contact
             img={logo}
             name="Shahid Akhter"
+            nameByFatherName="Dilwar II"
             skillName="Frontend Web Developer"
             description="I'm a frontend web developer can build websites with HTML, CSS & JS and most popular library of JavaScript called ReactJS and working on BootrapCSS and TailwindCSS."
           />} />
