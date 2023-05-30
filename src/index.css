@@ -188,6 +188,9 @@ code {
   padding-right: 1vw;
 }
 .pt-8 {
+  padding-top: 10px;
+}
+.pl-8 {
   padding-left: 10px;
 }
 
@@ -355,6 +358,9 @@ code {
   height: 35px;
   width: 35px;
   border-radius: 50%;
+}
+.shadow-md{
+  box-shadow: 0 10px 15px -3px pink, 0 4px 6px -4px pink;
 }
 
 

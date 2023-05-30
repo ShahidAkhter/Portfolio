@@ -1,24 +1,42 @@
-nav{
+nav {
     z-index: 1;
 }
-.NavFooter{
-    background: pink;
-    height: 70px;
+
+.NavFooter {
+    background: rgb(255, 195, 220);
+    min-height: 60px;
+    padding: 10px 0;
 }
-.name{
+
+.name {
     font-size: 30px;
     font-weight: 500;
     margin: 0 8px;
 }
 
-.links{
+.links, .nameLink {
     text-decoration: none;
     margin: 0 8px;
     font-weight: 500;
+    color: #ff0080;
+    font-size: 17px;
+    margin: 4px 6px;
+}
+.links:hover {
+    border-bottom: 1px solid #ff0080;
+}
+.links:focus {
+    color: rgb(255, 0, 179);
+}
+
+@media screen and (max-width: 300px) {
+    .nameDisplayNone{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 210px) {
-    .name{
+    .name {
         font-size: 25px;
     }
 }

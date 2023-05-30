@@ -23,7 +23,7 @@ const Contact = (props) => {
                         <div className="email-address flex margin-t"><div className='font-bold'>Work:&nbsp;</div><div>shahidakhter5660@gmail.com</div></div>
                     </div>
                     <div className="btns">
-                        <Link className="links text-pink" to="https://github.com/ShahidAkhter" target='_blank'><img src={githubLogo} className='h-7' alt="logo" /></Link>
+                        <Link className="text-pink" to="https://github.com/ShahidAkhter" target='_blank'><img src={githubLogo} className='h-7' alt="logo" /></Link>
                     </div>
                 </div>
             </div>

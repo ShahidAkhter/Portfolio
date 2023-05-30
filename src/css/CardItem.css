@@ -1,8 +1,9 @@
 .cards {
     width: 325px;
     margin: 6px 10px;
-    border: 1px solid rgb(255, 66, 97);
-    border-radius: 4px;
+    /* border: 1px solid rgb(255, 66, 97); */
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #ffdeec, #fff5f9);
 }
 
 .cardImg {
@@ -20,6 +21,12 @@
     padding-right: 20px;
     margin-top: 0 !important;
 }
+.linkBtn1:hover {
+    background: rgb(255, 0, 98);
+}
+.linkBtn1:focus {
+    background: rgb(255, 0, 98);
+}
 
 .btns-1 {
     margin-top: 4px;
@@ -35,17 +42,9 @@
     .cards {
         width: 275px;
     }
-    
-    .cardImg {
-        width: 275px;
-    }
 }
 @media screen and (max-width: 300px) {
     .cards {
-        width: 240px;
-    }
-    
-    .cardImg {
         width: 240px;
     }
 }

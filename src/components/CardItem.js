@@ -11,7 +11,7 @@ const CardItem = (props) => {
     return str.replace(replacingText, replaceWith);
   }
   return (
-    <div className='cards bg-3 text-justify'>
+    <div className='cards text-justify shadow-md'>
       <div className='flex f-center'>
         <img src={props.img} className="cardImg" alt='CardImg' />
       </div>
@@ -23,7 +23,7 @@ const CardItem = (props) => {
         </div>
         <div className="btns btns-1">
           {/* <Link className="links ml-0" to="/Readmore"><button className='bg text-white linkBtns linkBtn1 ml-0'>Read More</button></Link> */}
-          <Link className="links ml-0" to={`/Projects/${replaceInStr(projectsArray[props.index].title, /\s+/g, "_")}_${props.index + 1}`}>
+          <Link className="ml-0" to={`/Projects/${replaceInStr(projectsArray[props.index].title, /\s+/g, "_")}_${props.index + 1}`}>
             <button className='bg text-white linkBtns linkBtn1 ml-0' onClick={() => { props.updateView(props.index) }}>View</button>
           </Link>
         </div>

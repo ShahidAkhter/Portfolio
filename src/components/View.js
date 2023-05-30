@@ -31,7 +31,7 @@ const View = (props) => {
                         <div className="category font-bold text-size-4 text-color-2 margin-x margin-b">{category}</div>
                     </div>
                     <div>
-                        <Link className="links ml-0" to={visit} target='_blank'>
+                        <Link className="ml-0" to={visit} target='_blank'>
                             <button className='bg text-white linkBtns linkBtn1 ml-0'>Visit</button>
                         </Link>
                     </div>

@@ -27,13 +27,21 @@
     cursor: pointer;
     user-select: none;
 }
-
+.linkBtns:hover {
+    background: rgb(255, 0, 98);
+}
+.linkBtns:focus {
+    background: rgb(255, 0, 98);
+}
 @media screen and (max-width: 900px) {
     .image{
         display: none;
     }
     .info{
         text-align: center;
+    }
+    .desc{
+        margin: auto;
     }
 }
 @media screen and (max-width: 300px) {

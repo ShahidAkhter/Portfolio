@@ -8,10 +8,10 @@ const Footer = (props) => {
         <footer className='NavFooter flex f-center f-around f-wrap border-top'>
             <div className="flex f-center">
                 <img src={logo} className='img-logo' alt="logo" />
-            <div className="name text-size-1 text-pink">{props.name}</div>
+            <div className="name text-pink nameDisplayNone">{props.name}</div>
             </div>
             <div className="text-pink">
-                <Link className="links text-pink" to="https://github.com/ShahidAkhter" target='_blank'><img src={githubLogo} className='h-5' alt="logo" /></Link>
+                <Link className="text-pink" to="https://github.com/ShahidAkhter" target='_blank'><img src={githubLogo} className='h-5' alt="logo" /></Link>
             </div>
         </footer>
     )
