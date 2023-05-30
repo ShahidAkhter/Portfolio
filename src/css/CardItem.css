@@ -49,6 +49,18 @@
         font-size: 18px;
     }
 }
+@media screen and (max-width: 689px) {
+
+    .title,
+    .linkBtn1 {
+        font-size: 18px;
+    }
+    .cardImgContainer {
+        height: auto;
+        width: auto;
+        border-radius: 4px;
+    }
+}
 
 @media screen and (max-width: 340px) {
     .cards {
