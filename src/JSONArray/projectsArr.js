@@ -6,9 +6,8 @@ export const projectsArray = [
         image: bingoLogo,
         title: "Bingo",
         category: "Web App",
-        metaDescription: "MyLinks is a website where all of the links mostly used by me displays here.",
+        metaDescription: "Introducing Bingo: The Digital Solution for Traditional Game Enthusiasts. Play eco-friendly Bingo on electronic devices, no copies needed!",
         detailedDescription: `<div class='flex f-center'><img src="${bingoLogo}" class="border-radius max-w-4 max-h-4" alt='ViewImg' /></div>
-        <p>Introducing Bingo: The Digital Solution for Traditional Game Enthusiasts. Play eco-friendly Bingo on electronic devices, no copies needed!</p>
         <div class="text-size-4 text-color-2 font-bold">How to Play Bingo?</div>
         <p>Bingo is typically a two-player game played on a 5x5 grid. The grid contains randomly assigned numbers from 1 to 25 (or the number of cells in the grid). Once all the cells are filled with numbers, the game begins. Players take turns calling out a number, and all players mark or "cut" that number on their grids. The player who called the number continues the next turn. To score points, players look for groups of numbers in cells that have a different color from the rest. An example image will be displayed to illustrate this.</p>
         <div class='flex f-center'><img src="${bingoImg}" class="border-radius max-w-4 max-h-4" alt='ViewImg' /></div>
