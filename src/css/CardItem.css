@@ -6,14 +6,21 @@
     background: linear-gradient(to bottom, #ffdeec, #fff5f9);
 }
 
-.cardImg {
+.cardImg,.cardImgContainer {
+    max-height: 200px;
+    max-width: 325px;
+    border-radius: 4px;
+}
+.cardImgContainer {
     height: 200px;
+    width: 325px;
     border-radius: 4px;
 }
 
 .title {
     font-size: 20px;
 }
+
 .linkBtn1 {
     font-size: 20px;
     width: auto;
@@ -21,9 +28,11 @@
     padding-right: 20px;
     margin-top: 0 !important;
 }
+
 .linkBtn1:hover {
     background: rgb(255, 0, 98);
 }
+
 .linkBtn1:focus {
     background: rgb(255, 0, 98);
 }
@@ -34,17 +43,29 @@
 }
 
 @media screen and (max-width: 900px) {
-    .title,.linkBtn1 {
+
+    .title,
+    .linkBtn1 {
         font-size: 18px;
     }
 }
+
 @media screen and (max-width: 340px) {
     .cards {
         width: 275px;
     }
+
+    .cardImg {
+        max-width: 275px;
+    }
 }
+
 @media screen and (max-width: 300px) {
     .cards {
         width: 240px;
+    }
+
+    .cardImg {
+        max-width: 240px;
     }
 }

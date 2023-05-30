@@ -6,7 +6,7 @@ import { projectsArray } from '../JSONArray/projectsArr'
 const View = (props) => {
     let key = props.index;
     // eslint-disable-next-line
-    const [image, setImage] = useState(projectsArray[key].image)
+    // const [image, setImage] = useState(projectsArray[key].image)
     // eslint-disable-next-line
     const [title, setTitle] = useState(projectsArray[key].title)
     // eslint-disable-next-line
@@ -41,7 +41,7 @@ const View = (props) => {
                         {metaDescription}
                     </div>
                 </div>
-                <div className='text-center'><img src={image} className="border-radius h-4" alt='ViewImg' /></div>
+                {/* <div className='text-center'><img src={image} className="border-radius h-4" alt='ViewImg' /></div> */}
                 <div className="Viewinfo px-0 text-left w-4  margin-x margin-y">
                     <div className="description text-justify text-size-4 margin-x margin-y">
                         <div dangerouslySetInnerHTML={createMarkup()} />

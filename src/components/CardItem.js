@@ -12,7 +12,7 @@ const CardItem = (props) => {
   }
   return (
     <div className='cards text-justify shadow-md'>
-      <div className='flex f-center'>
+      <div className='flex f-center f-top cardImgContainer'>
         <img src={props.img} className="cardImg" alt='CardImg' />
       </div>
       <div className="m-0">
