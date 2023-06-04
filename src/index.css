@@ -34,7 +34,8 @@ code {
 
 .posRelative-1 {
   position: fixed !important;
-  /* top: 1px; */
+  top: 0;
+  z-index: -1;
 }
 
 .posChange {
@@ -43,15 +44,6 @@ code {
   left: 0;
   height: 30vmin;
   width: 30vmin;
-  border-radius: 0 !important;
-}
-
-.volumePos {
-  position: absolute;
-  bottom: 100px;
-  right: auto;
-  width: 5vmin;
-  height: 20vmin;
   border-radius: 0 !important;
 }
 

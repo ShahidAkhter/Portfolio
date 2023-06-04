@@ -28,10 +28,10 @@ const Navbar = (props) => {
                 </div>
             </div>
             <div ref={ref} className="mobileNav text-pink padding-1 flex f-wrap f-center f-col bg-3 border-bottom posRelative-1 w-100Per displayItemsSmScreenNav">
-                <Link className="links font-bolder" onClick={toggleClick} to="/">Home</Link>
-                <Link className="links font-bolder" onClick={toggleClick} to="/Projects">Projects</Link>
-                <Link className="links font-bolder" onClick={toggleClick} to="/About">About</Link>
-                <Link className="links font-bolder" onClick={toggleClick} to="/Contact">Contact</Link>
+                <Link className="links" onClick={toggleClick} to="/">Home</Link>
+                <Link className="links" onClick={toggleClick} to="/Projects">Projects</Link>
+                <Link className="links" onClick={toggleClick} to="/About">About</Link>
+                <Link className="links" onClick={toggleClick} to="/Contact">Contact</Link>
             </div>
         </nav>
     )

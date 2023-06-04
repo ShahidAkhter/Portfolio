@@ -5,8 +5,8 @@ import '../css/Contact.css'
 
 const Contact = (props) => {
     return (
-        <div className='flex f-center h-100 f-top pb-1'>
-            <div className="w-4 h-4 pb-1">
+        <div className='flex f-center min-h-2 f-top pb-1'>
+            <div className="w-4 pb-1">
                 <div className="text-size-4 font-bold text-color-2 text-center">Got ideas? Suggestions? Or feedback? Hit me up!</div>
                 <div className="flex f-center padding-1">
                     <img src={props.img} className='ImageStyle marginImg' alt="logo" />
@@ -22,7 +22,7 @@ const Contact = (props) => {
                         <div className="email text-size-4 font-bold">Email Address</div>
                         <div className="email-address flex margin-t"><div className='font-bold'>Work:&nbsp;</div><div>shahidakhter5660@gmail.com</div></div>
                     </div>
-                    <div className="btns">
+                    <div className="flex f-center padding-1">
                         <Link className="text-pink" to="https://github.com/ShahidAkhter" target='_blank'><img src={githubLogo} className='h-7' alt="logo" /></Link>
                     </div>
                 </div>

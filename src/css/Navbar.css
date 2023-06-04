@@ -1,7 +1,6 @@
-nav {
-    z-index: 1;
+.mobileNav{
+    padding-top: 104px;
 }
-
 .NavFooter {
     background: rgb(255, 195, 220);
     min-height: 60px;
