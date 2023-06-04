@@ -14,7 +14,8 @@ nav {
     margin: 0 8px;
 }
 
-.links, .nameLink {
+.links,
+.nameLink {
     text-decoration: none;
     margin: 0 8px;
     font-weight: 500;
@@ -22,21 +23,42 @@ nav {
     font-size: 17px;
     margin: 4px 6px;
 }
+
 .links:hover {
     border-bottom: 1px solid #ff0080;
 }
+
 .links:focus {
     color: rgb(255, 0, 179);
 }
 
-@media screen and (max-width: 300px) {
-    .nameDisplayNone{
-        display: none;
+.displayItemsSmScreenNav {
+    display: none !important;
+}
+.displayItemsSmScreen {
+    display: none !important;
+}
+
+.displayItemsBigScreen {
+    display: flex !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .displayItemsSmScreen {
+        display: flex !important;
+    }
+
+    .displayItemsBigScreen {
+        display: none !important;
+    }
+
+    .name {
+        font-size: 25px;
     }
 }
 
-@media screen and (max-width: 210px) {
-    .name {
-        font-size: 25px;
+@media screen and (max-width: 300px) {
+    .nameDisplayNone {
+        display: none;
     }
 }

@@ -32,6 +32,11 @@ code {
   bottom: -10px;
 }
 
+.posRelative-1 {
+  position: fixed !important;
+  /* top: 1px; */
+}
+
 .posChange {
   position: absolute;
   bottom: 101px;
@@ -180,6 +185,10 @@ code {
   margin: 8px;
 }
 
+.padding-0 {
+  padding: 8px 12vw !important;
+}
+
 .padding-1 {
   padding: 8px;
 }
@@ -203,6 +212,10 @@ code {
 
 .w-auto {
   width: auto;
+}
+
+.w-100Per {
+  width: 100%;
 }
 
 .w-1 {

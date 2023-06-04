@@ -12,8 +12,8 @@ const Header = (props) => {
         <div className="nameByFatherName font-bold text-pink ml-0 text-color-2 text-size-4">{props.nameByFatherName}</div>
         <div className="desc w-1 text-size-1">{props.description}</div>
         <div className="btns">
-          <Link className="margin-x ml-0" to="/Projects"><button className='bg text-white linkBtns ml-0'>Projects</button></Link>
-          <Link className="margin-x ml-0" to="/About"><button className='bg text-white linkBtns ml-0'>About</button></Link>
+          <Link to="/Projects"><button className='bg text-white linkBtns ml-0'>Projects</button></Link>
+          <Link to="/About"><button className='bg text-white linkBtns ml-0'>About</button></Link>
         </div>
       </div>
       <div className="image">
