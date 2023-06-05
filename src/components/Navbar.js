@@ -1,11 +1,16 @@
 import React from 'react'
-import { useRef } from 'react';
-import { Link } from "react-router-dom";
+import { useRef, useEffect } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import '../css/Navbar.css';
 import navThreeBars from '../assets/imgs/bars-solid.svg'
 
 const Navbar = (props) => {
     const ref=useRef()
+    const location = useLocation();
+    useEffect(() => {
+        ref.current.classList.add("displayItemsSmScreenNav")
+    }, [location]);
+
     const toggleClick=()=>{
         ref.current.classList.toggle("displayItemsSmScreenNav")
     }
@@ -13,7 +18,7 @@ const Navbar = (props) => {
         <nav className='margin-b-2 posSticky'>
             <div className='flex f-center f-between NavFooter border-bottom padding-0'>
                 <div className='flex f-center f-between f-wrap NavFooter'>
-                    <Link className="nameLink text-pink" to="/"><div className="name text-pink">{props.name}</div></Link>
+                    <Link className="nameLink text-pink" onClick={toggleClick} to="/"><div className="name text-pink">{props.name}</div></Link>
                 </div>
                 <div className='flex f-center f-around f-wrap NavFooter'>
                     <div className="text-pink flex f-wrap f-center displayItemsBigScreen">
