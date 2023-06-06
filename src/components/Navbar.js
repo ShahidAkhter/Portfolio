@@ -2,7 +2,7 @@ import React from 'react'
 import { useRef, useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import '../css/Navbar.css';
-import navThreeBars from '../assets/imgs/bars-solid.svg'
+import Hamburger from '../assets/imgs/bars-solid.svg'
 
 const Navbar = (props) => {
     const ref=useRef()
@@ -28,7 +28,7 @@ const Navbar = (props) => {
                         <Link className="links" to="/Contact">Contact</Link>
                     </div>
                     <div className='flex f-wrap f-center f-wrap displayItemsSmScreen cursor-pointer'>
-                        <img src={navThreeBars} onClick={toggleClick} className='h-5' alt="logo" />
+                        <img src={Hamburger} onClick={toggleClick} className='h-5' alt="logo" />
                     </div>
                 </div>
             </div>
