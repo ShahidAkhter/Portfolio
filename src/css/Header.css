@@ -8,7 +8,7 @@
     border-radius: 50%;
 }
 .nameByFatherName{
-    font-size: 22px;
+    font-size: 22px !important;
 }
 .skillName{
     font-size: 20px;
@@ -34,8 +34,19 @@
     background: rgb(255, 0, 98);
 }
 @media screen and (max-width: 900px) {
+    .header{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
     .image{
-        display: none;
+        margin: 10px;
+    }
+    .image, .logoImg{
+        height: 140px !important;
+        width: 140px !important;
     }
     .info{
         text-align: center;

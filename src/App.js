@@ -30,6 +30,7 @@ function App() {
 
   useEffect(() => {
     setProgress(100);
+    // eslint-disable-next-line
   }, [window.location.pathname]);
 
   const NAME="ShahidAkhter"
