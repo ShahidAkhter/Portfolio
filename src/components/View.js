@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { projectsArray } from '../JSONArray/projectsArr'
+import githubLogo from '../assets/imgs/github.svg'
 
 
 const View = (props) => {
@@ -16,6 +17,8 @@ const View = (props) => {
     // eslint-disable-next-line
     const [DetailedDescription, setDetailedDescription] = useState(projectsArray[key].detailedDescription)
     // eslint-disable-next-line
+    const [GitHubVisit, setGitHubVisit] = useState(projectsArray[key].gitHubURL)
+    // eslint-disable-next-line
     const [visit, setVisit] = useState(projectsArray[key].visitURL)
 
     const createMarkup = () => {
@@ -30,9 +33,12 @@ const View = (props) => {
                         <div className="text-size-3 font-bold text-pink margin-x">{title}</div>
                         <div className="category font-bold text-size-4 text-color-2 margin-x margin-b">{category}</div>
                     </div>
-                    <div>
-                        <Link className="ml-0" to={visit} target='_blank'>
-                            <button className='bg text-white linkBtns linkBtn1 ml-0'>Visit</button>
+                    <div className="flex f-center">
+                        {GitHubVisit === "" ? "" : <Link className="text-pink flex f-center" to={GitHubVisit} target='_blank'>
+                            <button className="gitHubLink flex f-center"><img src={githubLogo} className='h-5' alt="logo" /></button>
+                        </Link>}
+                        <Link className="" to={visit} target='_blank'>
+                            <button className='bg text-white linkBtns linkBtn1'>Visit</button>
                         </Link>
                     </div>
                 </div>
